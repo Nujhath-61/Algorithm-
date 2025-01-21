@@ -1,2 +1,2 @@
 # Algorithm
-Hello! 
+Hello! This repository is about all the algorithms I have practiced. Take a look...
