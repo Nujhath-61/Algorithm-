@@ -41,7 +41,28 @@ for(int i = 0;i<=m;i++)
 
 
   cout<<"Length of the sequence:"<<lcs[m][n]<<endl;
+int len = lcs[m][n];
+    string s3 (len,'\0');
+int i = m,j=n;
+    while(i>0 && j>0)
+    {
+        if(s1[i-1]==s2[j-1])
+        {
+            s3[len-1] = s1[i-1];
 
+        len--;
+        i--;
+        j--;
+        }
+        else if(lcs[i-1][j]>lcs[i][j-1])
+        {
+            i--;
+        }
+        else{
+            j--;
+        }
+    }
+    cout<<"LCS="<<s3<<endl;
 
 }
 int main()
